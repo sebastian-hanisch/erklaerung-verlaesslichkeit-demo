@@ -1,0 +1,13 @@
+{
+  "stand": "2026-11-19",
+  "erzeugt_von": "tools/erv_make_tables.py --write [--satz erst|zweit]; erv_wahrheit.exakte_wichtigkeit (--wahrheit)",
+  "umgebung": "Windows, Python 3.14, numpy 2.5, scipy 1.18, scikit-learn 1.9, OMP_NUM_THREADS=1",
+  "vehikel": "erfundener Verweilzeit-Generator (erv_generator.py, Kopie aus verweilzeit-demo); keine reale Datenquelle",
+  "dateien": {
+    "erv_phi.npz": "phi (8 Zellen, 20 Modelle, 200 Zeilen, 6 Merkmale) float32: exakte interventionale Shapley-Beiträge; truth (2 Trainingsgrößen, 10 Historien, 200, 6): Wahrheit je Funktional (Hintergrund: erste 40 Trainingszeilen der Historie); r2 (8): R² gegen mu. Erste Messung: Historien mit den Daten-Zufalls-Seeds 200 bis 209, Zeilenmengen 41001 bis 41010",
+    "erv_tables.npz": "tab (8, 60, 64, 40) float32: Wertetabellen f(x_S, b_rest) des ersten Neu-Trainings (Historie 200, Modell-Zufalls-Seed 0), Zeilenmengen 1 bis 3, Hintergrund 40 Zeilen",
+    "erv_erklaerer.json": "Schicht Erklärer je Zelle und Zeilenmenge: M = 30 und 100 ungepaart (u30, u100), bei Boosting und Netz gepaart (p30, p100); je 4 Neu-Trainings (Historien 200 bis 203) x 10 Läufe x 20 Zeilen; Zufallsstrom SplitMix64",
+    "erv_phi_zweit.npz / erv_erklaerer_zweit.json": "zweite Messung: Historien mit den Daten-Zufalls-Seeds 300 bis 309, Zeilenmengen 43001 bis 43010, R²-Referenz 44001, andere Erklärer-Zufalls-Seeds",
+    "erv_wahrheit.json": "exakte Bevölkerung: Wichtigkeit je Merkmal und Art-Anteil an (Art + Vorlauf) = 0,537 (Gauß-Legendre 24 Knoten; 12 Knoten: 0,538)"
+  }
+}

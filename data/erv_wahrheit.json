@@ -1,0 +1,13 @@
+{
+ "art_anteil_exakt": 0.5372903700711379,
+ "art_anteil_exakt_12_knoten": 0.5377858794881942,
+ "wichtigkeit_exakt": [
+  0.6509031136131576,
+  0.1864901869356649,
+  0.07196874999999996,
+  0.05510204081632655,
+  0.5605519019066202,
+  0.0
+ ],
+ "quelle": "erv_wahrheit.exakte_wichtigkeit(24): 1224 gewichtete St\u00fctzpunkte, Hintergrund und erkl\u00e4rte Zeilen dieselbe Bev\u00f6lkerung, Gau\u00df-Legendre 24 Knoten \u00fcber den Vorlauf"
+}
